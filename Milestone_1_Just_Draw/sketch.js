@@ -1,7 +1,9 @@
 //Milestone 1. Just Draw
+// draw a red rectangle (at top middle) and blue rectangle (at side middle)
+// whose centers are connected by a straight line
 
 //initializes the width and height of the rectangles
-//to be drawn. Assume the dimensions are the same for both.
+//to be drawn. Assumes the dimensions are the same for both.
 
 let rectW = 50; //width of rectangle
 let rectH = 50; //height of rectangle
