@@ -6,8 +6,9 @@ let h = 400; //height of canvas
 let leftEdge; //left edge (X) of canvas where blue rect should reverse directions 
 let rightEdge; //right edge (X) of canvas where blue rect should reverse directions
 
-//initialize buttons for toggling between the interactive scenario (left-right) or
-//pendulum scenario. Left-right is the default
+//initialize button for toggling between the interactive scenario (left-right) or
+//pendulum scenario. Left-right is the default -- note: instead of 2 buttons
+//this version uses only one and toggles the label
 let buttonPos; // vectors representing centers of left-right and pendulum buttons
 let buttonTextPos; //vectors with starting positions for text 
 let buttonText; // button text labels
@@ -100,7 +101,7 @@ function displayButton(buttonVec, buttonText, buttonTextPos, textW, textH){
   text('Click to change scenario', buttonTextPos.x - 10, buttonTextPos.y + 20);
 }
 
-function displayInstructions(onButton){
+function displayInstructions(){ //these only appear with left-right scenario
   fill(0);
   text("Instructions:", 5, 15);
   text("Press the space bar to reverse the blue rectangles movement", 5, 30);
